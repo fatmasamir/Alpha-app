@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900;1000&family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+Display:wght@300&family=Ubuntu:wght@300&family=Vazirmatn&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Kablammo&family=Mada:wght@200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;800;900&family=Noto+Kufi+Arabic:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -514,6 +513,7 @@ form .btn {
   padding: 10px;
 }
 
+.subNavbar .content .Links .active a,
 .subNavbar .content .Links li a:hover {
   color: rgba(245, 176, 187, 1);
 }
@@ -669,17 +669,89 @@ header .content .row button {
   border: 0px;
   width: 90%;
   margin: auto;
+  transition: .5s all ease-in-out;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  overflow: hidden;
 }
 
-.services .row .card img {
-  height: 300px;
+.services .row .card .img-header {
+  height: 358px;
 }
 
-.services .row .card h5 {
+
+.services .row .card .title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  bottom: -10px;
   font-weight: 600;
   padding: 15px 0px;
+  background: white;
+  height: auto;
   color: rgba(45, 45, 45, 1);
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: .5s all ease-in-out;
 }
+
+.services .content-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  /* background: url(../assets/servicesFram.png) center center; */
+  color: white;
+}
+
+.services .row .card .content-hover {
+  display: none;
+  padding-top: 80px;
+}
+
+.services .row .card .content-hover h5 {
+  padding-bottom: 10px;
+}
+
+.services .row .card .content-hover h5,
+.services .row .card .content-hover p {
+  color: white;
+}
+
+.services .row .card .content-hover a img {
+  width: 24px;
+  height: 24px;
+}
+
+.services .row .card:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.services .row .card:hover .content-hover {
+  display: block;
+}
+
+.services .row .card:hover .img-header {
+  display: block;
+  opacity: 0.5;
+}
+
+.services .row .card:hover .title {
+  transform: scale(1.8) translate(-119px, -114px) rotate(-93deg);
+  opacity: 0;
+  -webkit-transform: scale(1.5) translate(-119px, -114px) rotate(-93deg);
+  -moz-transform: scale(1.8) translate(-119px, -114px) rotate(-93deg);
+  -ms-transform: scale(1.8) translate(-119px, -114px) rotate(-93deg);
+  -o-transform: scale(1.8) translate(-119px, -114px) rotate(-93deg);
+  -webkit-transform: scale(1.8) translate(-119px, -114px) rotate(-93deg);
+  border-bottom-right-radius: 100px;
+}
+
+
+
 
 /*******************Accreditations************************/
 .Accreditations {
@@ -1427,7 +1499,73 @@ footer p {
   margin-top: 25px;
 }
 
-/***************general***************/
+/***************Offers***************/
+.Offers header {
+  height: 550px;
+}
+
+.Offers header .content .row h1 {
+  font-size: 64px;
+  font-weight: 200 !important;
+  margin-bottom: 40px;
+  font-family: 'Cairo';
+}
+
+.Offers header .content .row p {
+  background: rgba(223, 0, 36, 1);
+  color: white;
+  border-radius: 100px 0px 100px 0px;
+  width: 50%;
+  margin: auto;
+}
+
+/*****Offers packages******/
+.Offers .packages {
+  margin-top: 0px;
+  background: white;
+}
+
+.Offers .packages .tab button {
+  border: 1px solid rgba(224, 225, 237, 1);
+}
+
+
+/*******************ServicesHome************************/
+.ServicesHome .Deatiles {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.ServicesHome .Deatiles h4 {
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(214, 214, 214, 1);
+}
+
+.ServicesHome .Deatiles .btn-main {
+  padding: 0px 70px;
+  height: 50px;
+}
+
+.ServicesHome .Deatiles .image-services {
+  width: 100%;
+  border-radius: 0px 20px 0px 20px;
+  -webkit-border-radius: 0px 20px 0px 20px;
+  -moz-border-radius: 0px 20px 0px 20px;
+  -ms-border-radius: 0px 20px 0px 20px;
+  -o-border-radius: 0px 20px 0px 20px;
+}
+
+.ServicesHome .Deatiles .Preparation {
+  padding: 10px 0px;
+  border-top: 1px solid rgba(214, 214, 214, 1);
+  margin-top: 30px;
+}
+
+
+.ServicesHome .Deatiles h4 {
+  border: 0px;
+}
+
 /*********slick*****************/
 @media screen and (max-width: 992px) {
   /******general*********/
@@ -1645,5 +1783,12 @@ footer p {
     margin-top: 20px;
   }
 
+  /*******************Offers***************************/
+  .Offers header {
+    height: 400px;
+  }
 
+  .Offers h1 {
+    margin-top: 20px;
+  }
 }

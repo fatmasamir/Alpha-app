@@ -468,6 +468,7 @@ form .btn {
   width: 95%;
   background-size: cover;
   margin-left: auto;
+  padding: 5px 0px;
 }
 
 .subNavbar .backgroundImg {
@@ -560,7 +561,7 @@ header .headerImg {
   width: 100%;
   position: absolute;
   z-index: -1;
-  top: -37px;
+  top: -48px;
 }
 
 header .container,
@@ -580,11 +581,11 @@ header .content .row {
 } */
 header .content .row .content {
   margin: 0px auto;
-  padding-left: 80px;
+  /* padding-left: 80px; */
 }
 
 header .content .row h1 {
-  font-size: 60px;
+  font-size: 64px;
   padding-top: 170px;
   line-height: 70px;
   font-weight: 500;
@@ -592,11 +593,13 @@ header .content .row h1 {
 
 header .content .row p {
   padding: 10px 0px;
+  font-size: 24px;
 }
 
 header .content .row button {
   padding:
     16px 60px 16px;
+  width: 40%;
 }
 
 /*******************ListNumbers************************/
@@ -611,13 +614,12 @@ header .content .row button {
 
 .ListNumbers h6 {
   color: rgba(47, 53, 132, 1);
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
 }
 
 .ListNumbers p {
   color: rgba(7, 8, 11, 1);
-
   font-weight: 400;
 }
 
@@ -681,7 +683,7 @@ header .content .row button {
 
 /*******************Accreditations************************/
 .Accreditations {
-  padding: 100px 0px;
+  padding: 50px 0px 100px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -736,6 +738,8 @@ header .content .row button {
   background: white;
   color: black;
   margin-top: 50px;
+  border-bottom: 2px solid rgba(178, 0, 29, 1);
+  padding: 0px 20px;
 }
 
 .results {
@@ -798,14 +802,12 @@ header .content .row button {
 
 /*******************news************************/
 .news {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+  /* padding-bottom: 30px; */
   height: auto;
 }
 
-.news .resultsLeft {
-  margin-top: -30px;
-  height: 107%;
-}
+
 
 .news p {
   padding: 5px 0px 0px;
@@ -820,6 +822,566 @@ header .content .row button {
   -o-border-radius: 10px;
   height: 50px;
   margin: 10px 0px 20px;
+}
+
+.news .contentImage {
+  width: 100%;
+  position: relative;
+}
+
+.news .contentImage .content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 10%;
+  width: 100%;
+  color: white
+}
+
+.news .contentImage .content h5 {
+  color: white;
+}
+
+.news .contentImage .content p {
+  color: white
+}
+
+.news .contentImage .content .btn-white {
+  background: white;
+  color: black;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.news .contentImage .content .btn-main {
+  width: 30%;
+  display: block;
+}
+
+.news .contentImage .content .btn-translate {
+  background: transparent;
+  margin-bottom: 10px;
+  border: 1px solid;
+}
+
+.news .resultsLeft {
+  width: 100%;
+}
+
+/*******************Location************************/
+.Location {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background: url(../assets/Location-fram.png) center center no-repeat fixed;
+  background-size: cover;
+  height: 660px;
+  padding: 50px;
+}
+
+.Location img {
+  width: 100%;
+}
+
+.Location .List {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.Location .List li:first-child {
+  text-align: center;
+  border-right: 1px solid;
+  padding-right: 10px;
+}
+
+.Location .List li:last-child {
+  padding: 0px 10px;
+}
+
+.Location .List h1 {
+  margin: 0px !important;
+  color: rgba(223, 0, 36, 1);
+  font-size: 65px;
+  font-weight: 700;
+  padding: 0px !important;
+  line-height: .6;
+}
+
+.Location .List p {
+  margin: 0px;
+}
+
+.Location .Link {
+  color: rgba(223, 0, 36, 1);
+}
+
+.Location .Link img {
+  width: 20px;
+  height: 20px;
+}
+
+/*******************Partners************************/
+.Partners {
+  background: url(../assets/Partners.png) center center no-repeat fixed;
+  background-size: cover;
+  margin: 100px 0px;
+}
+
+.Partners .alfaLogo {
+  margin: 20px 0px 10px;
+}
+
+.Partners .animationFirst {
+  margin: 0 20px;
+  width: 50%;
+  padding: 0 0px;
+  text-align: center;
+  width: 180px;
+  height: 500px;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+.Partners .animationFirst img {
+  width: 120px;
+  height: 80px;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.Partners .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**
+ * Title:
+ *    Animations
+ * Description:
+ *    List all the animations of the site in one file
+ * Sections:
+ *    $. Keyframes
+ *    $. Classes
+ */
+
+
+
+/* $. Keyframes
+\*----------------------------------------------------------------*/
+
+
+@keyframes shrink {
+  0% {
+    color: green;
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+    color: grey;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+    color: grey;
+  }
+
+  100% {
+    transform: scale(2);
+    color: green;
+  }
+}
+
+
+/* $. Classes
+\*----------------------------------------------------------------*/
+
+.Partners .animate {
+  transform: translate3d(0, 0, 0);
+  perspective: 1000;
+  filter: blur(0);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: center left;
+
+}
+
+.Partners .animate--shrink {
+  animation-duration: 1s;
+  animation-name: shrink;
+  animation-timing-function: 'linear';
+}
+
+.Partners .animate--grow {
+  animation-duration: 1s;
+  animation-timing-function: 'linear';
+  animation-name: grow;
+}
+
+
+/* Slider */
+
+.Partners .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  touch-callout: none;
+  user-select: none;
+  touch-action: pan-y;
+  tap-highlight-color: transparent;
+  /* padding-top: 40px; */
+
+}
+
+.Partners .slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.Partners .slick-slider .slick-track,
+.Partners .slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.Partners .slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+
+.Partners .slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+
+  [dir="rtl"] & {
+    float: right;
+  }
+
+  img {
+    display: block;
+  }
+
+  &.slick-loading img {
+    display: none;
+  }
+
+  display: none;
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: block;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: 150px;
+    background: white;
+    border-radius: 10px;
+    padding: 40px 20px 40px 20px;
+    border: 1px solid rgba(224, 225, 237, 1) !important;
+    margin-bottom: 20px;
+    border: 0;
+    outline: none;
+
+    &:focus,
+    &:active,
+    &:selection {
+      outline: none !important;
+      border: 0 !important;
+      box-shadow: none;
+    }
+  }
+}
+
+.Partners .slick-arrow.slick-hidden {
+  display: none;
+}
+
+.Partners .slick-current {
+  position: relative;
+}
+
+/*******************packages************************/
+.packages {
+  background: rgba(242, 243, 244, 1);
+  padding: 70px 0px;
+  text-align: center;
+}
+
+.packages a {
+  color: black;
+}
+
+.packages .tabcontent .card {
+  padding: 20px 10px 30px;
+  margin-bottom: 10px;
+}
+
+.packages .tabcontent .card .topCard {
+  background: rgba(242, 243, 244, 1);
+  padding: 10px;
+
+}
+
+.packages .tabcontent .card .topCard .headerCard {
+  margin: auto;
+  display: block;
+  height: 98px;
+
+}
+
+.packages .tabcontent .card .topCard .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.packages .tabcontent .card .topCard .content ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.packages .tabcontent .card .topCard .content ul .number {
+  width: 43px;
+  height: 43px;
+  padding: 10px;
+  border-radius: 0px 100px 100px 100px;
+  -webkit-border-radius: 0px 100px 100pxb 100px;
+  -moz-border-radius: 0px 100px 100pxb 100px;
+  -ms-border-radius: 0px 100px 100pxb 100px;
+  -o-border-radius: 0px 100px 100pxb 100px;
+  background: rgba(47, 53, 132, 1);
+  color: white;
+  margin-right: 5px;
+}
+
+
+.packages .tabcontent .card .topCard .content .logoImage {
+  width: 77px;
+}
+
+.packages .tabcontent .card .bottomCard {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.packages .tabcontent .card .bottomCard h5 {
+  color: black;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.packages .tabcontent .card .bottomCard h6 {
+  color: black;
+  font-weight: 700;
+}
+
+.packages .tabcontent .card .bottomCard p {
+  font-size: 14px;
+}
+
+.packages .tabcontent .card .bottomCard p span {
+  color: rgba(223, 0, 36, 1);
+  text-decoration: line-through;
+}
+
+.packages .tabcontent .card .bottomCard .btn-main {
+  background: white;
+  border: 1px solid rgba(223, 0, 36, 1);
+  color: rgba(223, 0, 36, 1);
+  height: 46px;
+  padding: 10px 20px;
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.packages .tabcontent .card .bottomCard .btn-main:hover {
+  background: rgba(223, 0, 36, 1);
+  ;
+  border: 1px solid rgba(223, 0, 36, 1);
+  color: white;
+}
+
+.packages .tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.packages .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.3s;
+  background: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/* Change background color of buttons on hover */
+.packages .tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.packages .tab button.active {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+/* Style the tab content */
+.packages .tabcontent {
+  display: none;
+  border-top: none;
+}
+
+
+/*******************Reviews************************/
+.Reviews {
+  background: rgba(242, 243, 244, 1);
+  padding: 70px 0px;
+}
+
+.Reviews .card {
+  border: 0px;
+  width: 90%;
+  margin-right: auto;
+  padding: 50px 15px 30px;
+  position: relative;
+  margin-top: 80px;
+  text-align: left;
+}
+
+.Reviews .card .iconMessage {
+  position: absolute;
+  z-index: 99;
+  top: -35px;
+  left: 20px;
+}
+
+.Reviews .card p {
+  color: rgba(145, 155, 163, 1);
+  margin-bottom: 10px;
+}
+
+.Reviews .card h6 {
+  font-size: 20px;
+  color:
+    rgba(77, 77, 77, 1);
+}
+
+.Reviews .card .iconMessage img {
+  width: 60px;
+  height: 60px;
+}
+
+.Reviews .card .rating {
+  color: rgba(47, 53, 132, 1);
+  display: flex;
+}
+
+.Reviews .card .rating li {
+  margin-right: 10px;
+}
+
+
+/*******************Articles************************/
+.Articles {
+  padding: 70px 0px;
+}
+
+.Articles .container .topImage,
+.Articles .container .topImage img {
+  width: 100%;
+}
+
+.Articles .container .content {
+  text-align: left;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.Articles .container .content span {
+  font-size: 14px;
+  color:
+    rgba(77, 77, 77, 1);
+}
+
+.Articles .container .content h6 {
+  font-size: 20px;
+  margin: 5px 0px;
+  font-weight: 600;
+}
+
+.Articles .container .content p {
+  color:
+    rgba(123, 133, 143, 1);
+}
+
+.Articles .container .content {
+  padding: 10px;
+  border: 1px solid rgba(224, 225, 237, 1);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top: 0px;
+}
+
+.Articles .container .content .iconArrow {
+  position: absolute;
+  z-index: 99;
+  bottom: -25px;
+  left: 20px;
 }
 
 /*******************footer************************/
@@ -865,7 +1427,18 @@ footer p {
   margin-top: 25px;
 }
 
+/***************general***************/
+/*********slick*****************/
 @media screen and (max-width: 992px) {
+  /******general*********/
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
 
   /*navbar */
   .navbar .navbar-btns-icons {
@@ -924,8 +1497,13 @@ footer p {
   }
 
   header .content .row h1 {
-    font-size: 40px;
+    font-size: 27px;
     padding-top: 50px;
+    line-height: normal;
+  }
+
+  header .content .row button {
+    width: 90%;
   }
 
   /*ListNumbers */
@@ -938,6 +1516,10 @@ footer p {
     border-bottom: 1px solid rgba(214, 214, 214, 1);
     padding: 30px 0px 10px;
 
+  }
+
+  .ListNumbers h6 {
+    font-size: 30px;
   }
 
   .ListNumbers .row>div:last-child {
@@ -954,7 +1536,9 @@ footer p {
   }
 
   /*.technician */
-  .technician {
+  .technician,
+  .Location {
+
     height: auto;
     padding-bottom: 40px;
   }
@@ -974,7 +1558,7 @@ footer p {
   }
 
   .news .resultsLeft {
-    margin-top: -15px;
+    display: none;
   }
 
   .news .row>div {
@@ -982,6 +1566,75 @@ footer p {
     text-align: center;
   }
 
+  /*.Location */
+  .Location .Link img {
+    margin-top: 10px;
+  }
+
+
+  /*.news */
+  .news .contentImage .content .btn-main {
+    width: 29%;
+    display: block;
+    margin: auto;
+  }
+
+  .news .contentImage {
+    background: url(../assets/News.png) center center;
+    background-size: cover;
+  }
+
+  .news .contentImage .content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding-bottom: 50px;
+  }
+
+  .news .contentImage .content .btn-main {
+    margin: auto;
+    width: 80%;
+  }
+
+  .news h5 {
+    margin-top: 50px;
+    padding-top: 40px;
+  }
+
+  .news .contentImage .content .btn-white {
+    margin-bottom: 20px;
+  }
+
+  /*.Reviews */
+  .Reviews .card {
+    margin: auto;
+    margin-top: 80px;
+  }
+
+  /*.Partners */
+  .Partners .animationFirst img {
+    width: 100%;
+  }
+
+  .Partners .animationFirst {
+    margin: 0px 6px;
+  }
+
+  .packages .tab button {
+    margin-right: 5%;
+    margin-bottom: 10px;
+    width: 45%;
+  }
+
+  /*.Location */
+  .Location {
+    padding: 50px 0px;
+  }
+
+  /*.footer */
   footer .content ul {
     width: 100%;
     display: block;
@@ -991,4 +1644,6 @@ footer p {
     display: inline-block;
     margin-top: 20px;
   }
+
+
 }

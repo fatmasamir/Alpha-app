@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
   $("html").attr("dir", localStorage.getItem("dir") || "ltr");
   $("html").attr("class", localStorage.getItem("lang") || "en");
   // Change Lang
@@ -11,7 +11,7 @@ $(document).ready(function(){
       $("html").attr("dir", "ltr");
       localStorage.setItem("dir", "ltr");
     } else {
-      $("html").attr("class",  "ar");
+      $("html").attr("class", "ar");
       $("html").attr("dir", "rtl");
       localStorage.setItem("dir", "rtl");
     }
@@ -19,16 +19,16 @@ $(document).ready(function(){
       $("html").attr("lang") == "ar" ||
       localStorage.getItem("lang") == "ar"
     ) {
-      $("html").attr("class",  "en");
+      $("html").attr("class", "en");
       $("html").attr("lang", "en");
       localStorage.setItem("lang", "en");
     } else {
-      $("html").attr("class","ar");
+      $("html").attr("class", "ar");
       $("html").attr("lang", "ar");
       localStorage.setItem("lang", "ar");
     }
   });
-  $(".lang_button").click(function ()  {
+  $(".lang_button").click(function () {
     if (
       $("html").attr("dir") == "rtl" ||
       localStorage.getItem("dir") == "rtl"
@@ -37,7 +37,7 @@ $(document).ready(function(){
       $("html").attr("dir", "ltr");
       localStorage.setItem("dir", "ltr");
     } else {
-      $("html").attr("class",  "ar");
+      $("html").attr("class", "ar");
       $("html").attr("dir", "rtl");
       localStorage.setItem("dir", "rtl");
     }
@@ -45,35 +45,35 @@ $(document).ready(function(){
       $("html").attr("lang") == "ar" ||
       localStorage.getItem("lang") == "ar"
     ) {
-      $("html").attr("class",  "en");
+      $("html").attr("class", "en");
       $("html").attr("lang", "en");
       localStorage.setItem("lang", "en");
     } else {
-      $("html").attr("class","ar");
+      $("html").attr("class", "ar");
       $("html").attr("lang", "ar");
       localStorage.setItem("lang", "ar");
     }
-  })
+  });
 
   // Increase
-   let valueDisplays = document.querySelectorAll(".num_inc");
-   let interval = 3000;
-  $(window).scroll(function(){
-  if($(window).scrollTop() < 2000){
-  valueDisplays.forEach((valueDisplay) => {
-    let startValue = 0;
-    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-    let duration = Math.floor(interval / endValue);
-    let counter = setInterval(function () {
-      startValue += 1;
-      valueDisplay.textContent = startValue;
-      if (startValue == endValue) {
-        clearInterval(counter);
-      }
-    }, duration);
+  let valueDisplays = document.querySelectorAll(".num_inc");
+  let interval = 3000;
+  $(window).scroll(function () {
+    if ($(window).scrollTop() < 2000) {
+      valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function () {
+          startValue += 1;
+          valueDisplay.textContent = startValue;
+          if (startValue == endValue) {
+            clearInterval(counter);
+          }
+        }, duration);
+      });
+    }
   });
-}
-})
   // Smooth Scrolling
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -117,82 +117,118 @@ $(document).ready(function(){
         }
       }
     });
-    $("#loading").fadeOut(1500);
-    var btn_top = $("#scroll-top");
-    btn_top.addClass("show");
-    
-    
-$('#picters_alpha').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 5,
-  focusOnSelect: true,
-  // navText: [
-  //   "<img src='assets/arleft.svg'>",
-  //   "<img src='assets/arright.svg'>",
-  // ],
-  arrows: true,
-  speed: 500,
-  responsive: [
-    {
-      breakpoint: 1300,
-      settings: {
-        centerMode: true,
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 950,
-      settings: {
-        centerMode: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        centerMode: true,
-        slidesToShow: 1
-      }
-    },
-  ]
-});
-  
-$('#offer').slick({
-  slidesToShow: 1,
-  arrows:true,
-});
-$('#customerReviews').slick({
-  slidesToShow: 3,
-  arrows: true,
-  speed: 500,
-  responsive: [
-    {
-      breakpoint: 1300,
-      settings: {
-        centerMode: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 950,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1
-      }
-    },
-  ]
-});	$("#loading").fadeOut(1500);
-var btn_top = $("#scroll-top");
-btn_top.addClass("show");
-});
-  // logic
-  $("#CHAT_LINK").on('click', function() {
-    $('.link_chat span').fadeToggle(200);
+  $("#loading").fadeOut(1500);
+  var btn_top = $("#scroll-top");
+  btn_top.addClass("show");
+
+  $("#picters_alpha").slick({
+    centerMode: true,
+    centerPadding: "60px",
+    slidesToShow: 5,
+    focusOnSelect: true,
+    // navText: [
+    //   "<img src='assets/arleft.svg'>",
+    //   "<img src='assets/arright.svg'>",
+    // ],
+    arrows: true,
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          centerMode: true,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 950,
+        settings: {
+          centerMode: true,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
+
+  $("#offer").slick({
+    slidesToShow: 1,
+    arrows: true,
+  });
+  $("#customerReviews").slick({
+    slidesToShow: 3,
+    arrows: true,
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          centerMode: true,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 950,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $(".Message").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
+  });
+
+  $("#loading").fadeOut(1500);
+  var btn_top = $("#scroll-top");
+  btn_top.addClass("show");
+});
+// logic
+$("#CHAT_LINK").on("click", function () {
+  $(".link_chat span").fadeToggle(200);
+});
 AOS.init();

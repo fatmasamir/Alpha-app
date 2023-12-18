@@ -1566,6 +1566,90 @@ footer p {
   border: 0px;
 }
 
+/******************BookYourServices*****************/
+.BookYourServices .Deatiles .alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(242, 243, 244, 1);
+  margin: 50px 0px;
+  border: 0px;
+}
+
+.BookYourServices .Deatiles .alert h5 {
+  color: black;
+}
+
+.BookYourServices .Deatiles .alert .btn-main {
+  width: 30%;
+}
+
+.BookYourServices .Deatiles .PatientInfo .alert {
+  margin: 0px;
+}
+
+.BookYourServices .Deatiles .PatientInfo form .form-group {
+  margin-top: 10px;
+  padding: 5px 20px;
+}
+
+.BookYourServices .Deatiles .PatientInfo form .form-group input {
+  height: 50px;
+
+}
+
+.BookYourServices .Deatiles .PatientInfo form .form-group input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+
+}
+
+.BookYourServices .Deatiles .PatientInfo form .form-group label {
+  padding-bottom: 5px;
+}
+
+.BookYourServices .Deatiles .PatientInfo form .form-group input,
+.BookYourServices .Deatiles .PatientInfo form .form-group textarea,
+.BookYourServices .Deatiles .PatientInfo form .form-group select {
+
+  color: rgba(214, 214, 214, 1);
+  appearance: inherit;
+}
+
+.BookYourServices .Deatiles .PatientInfo form .form-group input::placeholder {
+  color: rgba(214, 214, 214, 1);
+
+}
+
+.BookYourServices .Deatiles .PatientInfo .Card-img {
+  /* width: 20px;
+  height: 20px; */
+
+}
+
+.BookYourServices .Deatiles .PatientInfo .card {
+  background: rgba(242, 243, 244, 1);
+  padding: 10px;
+  border: 0px;
+  margin-bottom: 20px;
+}
+
+.BookYourServices .Deatiles .PatientInfo .card .row>div .content {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(224, 225, 237, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 10px;
+}
+
+.BookYourServices .Deatiles .PatientInfo .card .row>div:last-child .content {
+  border-bottom: 0px
+}
+
+.BookYourServices .Deatiles .PatientInfo .btn-main {
+  width: 100%;
+}
+
 /*********slick*****************/
 @media screen and (max-width: 992px) {
   /******general*********/
@@ -1790,5 +1874,14 @@ footer p {
 
   .Offers h1 {
     margin-top: 20px;
+  }
+
+  /*******************BookYourServices***************************/
+  .BookYourServices .Deatiles .alert {
+    flex-direction: column;
+  }
+
+  .BookYourServices .Deatiles .alert .btn-main {
+    width: 50%;
   }
 }

@@ -1292,11 +1292,13 @@ header .content .row button {
   font-weight: 700;
 }
 
-.packages .tabcontent .card .bottomCard p {
+.packages .tabcontent .card .bottomCard p,
+.TestsDetielsPage .Deatiles .instead {
   font-size: 14px;
 }
 
-.packages .tabcontent .card .bottomCard p span {
+.packages .tabcontent .card .bottomCard p span,
+.TestsDetielsPage .Deatiles .instead span {
   color: rgba(223, 0, 36, 1);
   text-decoration: line-through;
 }
@@ -1650,7 +1652,168 @@ footer p {
   width: 100%;
 }
 
-/*********slick*****************/
+/*********TestPage*****************/
+.TestPage header {
+  height: 550px;
+}
+
+.TestPage .packages {
+  background: white;
+  position: relative;
+}
+
+
+
+
+.TestPage .packages .tab {
+  background: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.TestPage .packages .tabcontent {
+  margin-top: 50px;
+}
+
+.TestPage .top-sec {
+  border-bottom: 1px solid rgba(224, 225, 237, 1);
+  padding:
+    30px;
+  position: absolute;
+  top: -100px;
+  width: 84%;
+  background: white;
+}
+
+
+.TestPage .packages .searching {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TestPage .packages .searching input {
+  width: 85%;
+  background: linear-gradient(0deg, #F2F3F4, #F2F3F4), linear-gradient(0deg, #D8D8D8, #D8D8D8);
+  padding: 12px 0px 12px 12px;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px;
+  height: 51px;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -ms-border-radius: 10px 0px 0px 10px;
+  -o-border-radius: 10px 0px 0px 10px;
+}
+
+.TestPage .packages .searching button {
+  width: 15%;
+  height: 51px;
+  padding: 10px;
+  border-radius:
+    0px 10px 10px 0px;
+  background: rgba(223, 0, 36, 1);
+  border: 0px;
+  color: white;
+}
+
+/*********TestsDetielsPage*****************/
+.TestsDetielsPage .ImageTests {
+  border: 1px solid rgba(224, 225, 237, 1);
+  padding: 20px;
+  height: 338px;
+}
+
+.TestsDetielsPage .ImageTests img {
+  width: 100%;
+  height: 100%;
+}
+
+.TestsDetielsPage .Deatiles .content {
+  padding-left: 20px;
+}
+
+.TestsDetielsPage .Deatiles h4 {
+  border-bottom: 1px solid rgba(214, 214, 214, 1)
+}
+
+.TestsDetielsPage .Deatiles h3 {
+  color: rgba(47, 53, 132, 1);
+  font-size: 32px;
+
+}
+
+.TestsDetielsPage .Deatiles .btn-main {
+  padding: 0px 20px;
+  height: 50px;
+}
+
+.TestsDetielsPage .List_Included .container {
+  width: 80%;
+  margin: auto;
+}
+
+.TestsDetielsPage .List_Included .container .title {
+  background: rgba(201, 0, 32, 1);
+  padding: 10px;
+  border-radius:
+    20px 20px 0px 0px;
+}
+
+.TestsDetielsPage .List_Included .container .title h5 {
+  font-size: 20px;
+  color: white;
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.TestsDetielsPage .List_Included .container .card-header button,
+.TestsDetielsPage .List_Included .container .card-header:first-child {
+  background: rgba(242, 243, 244, 1);
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius:
+    12px;
+  width: 100%;
+}
+
+.TestsDetielsPage .List_Included .container .card {
+  margin: 10px 0px;
+  border: 0px;
+}
+
+.TestsDetielsPage .List_Included .container .card-header button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TestsDetielsPage .List_Included .container .card-header button svg {
+  border-radius: 100%;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+}
+
+.TestsDetielsPage .List_Included .container .card-header .collapsed .fa-minus {
+  display: none;
+}
+
+.TestsDetielsPage .List_Included .container .card-header .collapsed .fa-plus {
+  display: block;
+}
+
+.TestsDetielsPage .List_Included .container .card-header .fa-minus {
+  display: block;
+}
+
+.TestsDetielsPage .List_Included .container .card-header .fa-plus {
+  display: none;
+}
+
+/*********media*****************/
 @media screen and (max-width: 992px) {
   /******general*********/
 
@@ -1857,9 +2020,15 @@ footer p {
   }
 
   /*.footer */
+  footer .content {
+    margin-bottom: 0px;
+  }
+
   footer .content ul {
     width: 100%;
     display: block;
+    padding: 0px;
+    margin: 0px;
   }
 
   footer .content ul .soical {
@@ -1883,5 +2052,36 @@ footer p {
 
   .BookYourServices .Deatiles .alert .btn-main {
     width: 50%;
+  }
+
+  /*******************BookYourServices***************************/
+  .TestPage .top-sec {
+    padding: 20px;
+    top: 0x;
+    width: 100%;
+    position: relative;
+  }
+
+  .TestPage .packages .tab {
+    display: block;
+  }
+
+  .TestPage .packages .tab button {
+    width: 47%;
+    display: inline-block;
+    margin: 4px;
+    margin-top: 10px;
+  }
+
+  .TestPage .packages .tabcontent {
+    margin-top: 0px;
+  }
+
+  /*******************BookYourServices***************************/
+
+  .ServicesHome .Deatiles,
+  .TestsDetielsPage .List_Included .container {
+    width: 100%;
+    margin: 50px auto;
   }
 }

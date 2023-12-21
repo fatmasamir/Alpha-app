@@ -52,6 +52,11 @@ a:active {
   color: initial !important;
 }
 
+input:focus,
+select:focus {
+  box-shadow: none !important;
+}
+
 button:focus:not(:focus-visible) {
   outline: 0;
   box-shadow: 0px 0px 0px;
@@ -2129,6 +2134,40 @@ footer p {
   padding: 30px;
 }
 
+/*********ContactUs*****************/
+.ContactUs .Fillter .top-sec .row>div {
+  border-right: 1px solid rgba(214, 214, 214, 1);
+}
+
+.ContactUs .Fillter .top-sec .row>div:last-child {
+  border: 0px;
+}
+
+.ContactUs .form-contact-us {
+  background: rgba(242, 243, 244, 1);
+  padding: 50px 0px;
+
+}
+
+.ContactUs .form-contact-us .card {
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.ContactUs .form-contact-us .row {
+  display: flex;
+  align-items: center;
+}
+
+.ContactUs .form-contact-us .card input {
+  height: 55px;
+}
+
+.ContactUs .form-contact-us .card .form-group {
+  margin: 10px 0px;
+}
+
 /*********media*****************/
 @media screen and (max-width: 992px) {
   /******general*********/
@@ -2409,5 +2448,18 @@ footer p {
 
   .about-page .missinVision img {
     height: auto;
+  }
+
+  .ContactUs .Fillter .top-sec .row>div {
+    border-right: 0px;
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+  }
+
+  .ContactUs .form-contact-us .row {
+    flex-direction: column-reverse;
+  }
+
+  .ContactUs .form-contact-us .card {
+    width: 100%;
   }
 }

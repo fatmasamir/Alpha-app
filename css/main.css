@@ -468,6 +468,7 @@ form .btn {
   background-size: cover;
   margin-left: auto;
   padding: 5px 0px;
+  z-index: 9;
 }
 
 .subNavbar .backgroundImg {
@@ -1813,6 +1814,321 @@ footer p {
   display: none;
 }
 
+/********************media**************************/
+.about-page header {
+  height: 550px;
+}
+
+.about-page .values {
+  background: rgba(242, 243, 244, 1);
+  padding: 70px 0px;
+  text-align: center;
+}
+
+.about-page .values .card {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border: 0px;
+  margin-bottom: 30px;
+}
+
+.about-page .values .header-image {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.about-page .values .icon {
+  background: white;
+  width: 78px;
+  height: 78px;
+  border-radius: 100%;
+  margin: auto;
+  padding: 14px;
+  margin-top: -30px;
+}
+
+.about-page .missinVision {
+  margin: 50px 0px;
+}
+
+.about-page .missinVision .row>div {
+  padding: 20px;
+}
+
+.about-page .missinVision img {
+  height: 350px;
+  width: 100%;
+}
+
+.Numbers {
+
+  padding: 50px 0px 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Numbers .content {
+  border: 1px solid rgba(77, 77, 77, 0.2);
+  padding: 25px 25px;
+  margin: 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+
+.Numbers .content h5 {
+  color: rgba(47, 53, 132, 1);
+  background: rgba(242, 243, 244, 1);
+  width: 75px;
+  height: 65px;
+  margin: auto;
+  font-size: 32px !important;
+  padding: 10px 3px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+
+/*********Journey*****************/
+.Journey {
+  background: rgba(242, 243, 244, 1);
+  padding: 70px 0px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.Journey .slick-dots {
+  width: 94%;
+  margin: auto;
+  bottom: -62px;
+}
+
+.Journey .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  height: 3px;
+  padding: 0;
+  margin-top: -50px;
+  margin: 0px;
+  cursor: pointer;
+  background: rgba(182, 183, 185, 1);
+}
+
+.Journey .slick-dots .slick-active {
+  background: rgba(43, 33, 113, 1)
+}
+
+.slick-dots li button {
+  width: 100%;
+}
+
+.Journey .slick-next:before,
+.Journey .slick-prev:before {
+  content: ">";
+  color: black;
+  font-size: 20px;
+  border: 1px solid rgba(214, 214, 214, 1);
+  padding: 15px 20px;
+  font-weight: 900;
+  border-radius: 100%;
+}
+
+.Journey .slick-next,
+.Journey .slick-prev {
+  position: absolute;
+  bottom: -55px;
+  right: 55px;
+  left: auto;
+  top: auto;
+}
+
+.Journey .slick-next {
+  right: 0px;
+}
+
+.Journey .slick-prev:before {
+  content: "<";
+}
+
+.Journey .content {
+  margin: auto;
+}
+
+.Journey .content .boarder {
+  border-bottom: 1px solid #aaa;
+  position: relative;
+  margin: 20px 0px;
+}
+
+.Journey .content .boarder span {
+  background: rgba(223, 0, 36, 1);
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+
+}
+
+.Journey .content .card .backImage {
+  position: absolute;
+  top: -25px;
+  left: 40%;
+  z-index: -1;
+}
+
+.Journey .content .card {
+  margin: 50px 10px 0px;
+  padding: 30px 15px;
+}
+
+/*********BranchesPage*****************/
+.BranchesPage .Branches {
+  text-align: center;
+  margin: auto;
+}
+
+.BranchesPage .Branches .headerCard {
+  width: 32px;
+  height: 32px;
+  margin: 20px auto;
+}
+
+.BranchesPage .Branches .card {
+  margin: auto auto 20px;
+  width: 95%;
+  padding-bottom: 50px;
+
+}
+
+.BranchesPage .Branches .form-control {
+  height: 51px;
+}
+
+.Medical-articles .Articles {
+  margin-top: -100px;
+  padding-bottom: 0px;
+}
+
+.Medical-articles .packages .searching button {
+  width: 50px;
+}
+
+/*********Partners*****************/
+.PartnersPage .Partners {
+  margin-top: -50px;
+}
+
+.PartnersPage .List_Included .form {
+  background: rgba(242, 243, 244, 1);
+  padding: 30px;
+
+}
+
+.PartnersPage .List_Included .form .form-group {
+  margin: 10px 20px 0px;
+}
+
+.PartnersPage .List_Included .form input,
+.PartnersPage .List_Included .form select {
+  height: 60px;
+
+}
+
+.PartnersPage .List_Included .stepper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: max-content;
+}
+
+.PartnersPage .List_Included .stepper li:first-child,
+.PartnersPage .List_Included .stepper li:last-child {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  padding: 7px 15px;
+  background: white;
+  color: black;
+}
+
+.PartnersPage .List_Included .stepper li.active {
+  background: rgba(201, 0, 32, 1);
+  color: white;
+}
+
+.PartnersPage .List_Included .stepper li .line {
+  width: 100px;
+  height: 2px;
+  background: rgba(214, 214, 214, 1);
+  display: block;
+}
+
+.PartnersPage .List_Included .btn-main {
+  display: block;
+  width: 40%;
+  text-align: center;
+}
+
+.PartnersPage .List_Included .btn-main:hover,
+.PartnersPage .List_Included .btn-main:active,
+.PartnersPage .List_Included .btn-main:focus {
+  color: white;
+}
+
+/*********PartnersPage2*****************/
+.PartnersPage2 .List_Included .stepper li {
+  background: rgba(201, 0, 32, 1);
+  color: white;
+}
+
+/*********Jobs*****************/
+.Jobs .careers .fileUpload {
+  position: relative;
+}
+
+.Jobs .careers .fileUpload input {
+  opacity: 0;
+  width: 200px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  z-index: 3;
+}
+
+.Jobs .careers .fileUpload p {
+  color: rgba(201, 0, 32, 1);
+  text-decoration: underline;
+}
+
+.Jobs .fileUpload {
+  margin-top: 20px;
+}
+
+.Jobs .careers input,
+.Jobs .careers select {
+  height: 60px;
+}
+
+/*********careers*****************/
+.careers .container {
+  background: rgba(242, 243, 244, 1);
+  margin: 50px auto 50px;
+  padding: 30px;
+}
+
 /*********media*****************/
 @media screen and (max-width: 992px) {
   /******general*********/
@@ -2083,5 +2399,15 @@ footer p {
   .TestsDetielsPage .List_Included .container {
     width: 100%;
     margin: 50px auto;
+  }
+
+  /*******************about-page***************************/
+  .about-page header {
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .about-page .missinVision img {
+    height: auto;
   }
 }

@@ -826,57 +826,58 @@
           </div>
         </div>
       </footer>
-      <script src="./js/jquery.min.js"></script>
+    </section>
+    <script src="./js/jquery.min.js"></script>
 
-      <!-- Bootstrap -->
-      <script type="text/javascript" src="./js/slick.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-      <script src="js/popper.js"></script>
-      <script src="lib/bootstrap-4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="js/popper.js"></script>
+    <script src="lib/bootstrap-4.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
-      <script src="lib/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 
-      <!-- jquery -->
+    <!-- jquery -->
 
-      <!-- fancyBox script -->
-      <script src="./js/fancybox.min.js"></script>
-      <!-- aos script -->
-      <script src="./js/aos.js"></script>
-      <!-- Font Awesome -->
-      <script src="./js/all.js"></script>
-      <!-- JS Coded -->
-      <script src="js/app.js"></script>
-      <script src="./js/animationSlick.js">// Get titles from the DOM
+    <!-- fancyBox script -->
+    <script src="./js/fancybox.min.js"></script>
+    <!-- aos script -->
+    <script src="./js/aos.js"></script>
+    <!-- Font Awesome -->
+    <script src="./js/all.js"></script>
+    <!-- JS Coded -->
+    <script src="js/app.js"></script>
+    <script src="./js/animationSlick.js">// Get titles from the DOM
 
-      </script>
-      <script>
-        var x, contenttamen, tabcontent, index = "All";
-        //Show the Selected Tab
-        document.getElementById(index).style.display = "block";
-        document.getElementById(index).classList.add = "active";
-        function openCity(evt, cityName) {
-          // Declare all variables
+    </script>
+    <script>
+      var x, contenttamen, tabcontent, index = "All";
+      //Show the Selected Tab
+      document.getElementById(index).style.display = "block";
+      document.getElementById(index).classList.add = "active";
+      function openCity(evt, cityName) {
+        // Declare all variables
 
-          // Get all elements with class="tabcontent" and hide them
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-
-          // Get all elements with class="tablinks" and remove the class "active"
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-
-          // Show the current tab, and add an "active" class to the button that opened the tab
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
         }
 
-      </script>
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+    </script>
 </body>
 
 </html>

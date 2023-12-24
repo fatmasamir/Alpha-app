@@ -1580,7 +1580,7 @@ footer p {
   justify-content: space-between;
   align-items: center;
   background: rgba(242, 243, 244, 1);
-  margin: 50px 0px;
+  margin: 50px 0px 30px;
   border: 0px;
 }
 
@@ -1601,7 +1601,8 @@ footer p {
   padding: 5px 20px;
 }
 
-.BookYourServices .Deatiles .PatientInfo form .form-group input {
+.BookYourServices .Deatiles .PatientInfo form .form-group input,
+.BookYourServices .Deatiles .PatientInfo form .form-group select {
   height: 50px;
 
 }
@@ -1629,9 +1630,8 @@ footer p {
 
 }
 
-.BookYourServices .Deatiles .PatientInfo .Card-img {
-  /* width: 20px;
-  height: 20px; */
+.BookYourServices .Deatiles .PatientInfo h4 {
+  font-weight: 600px;
 
 }
 
@@ -1656,6 +1656,25 @@ footer p {
 
 .BookYourServices .Deatiles .PatientInfo .btn-main {
   width: 100%;
+}
+
+.BookYourServices .container .card-header {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.BookYourServices .container .card-header .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.BookYourServices .container .card-header .content h5 {
+  font-weight: 600;
+  color: black;
 }
 
 /*********TestPage*****************/
@@ -1783,11 +1802,6 @@ footer p {
   border-radius:
     12px;
   width: 100%;
-}
-
-.TestsDetielsPage .List_Included .container .card {
-  margin: 10px 0px;
-  border: 0px;
 }
 
 .TestsDetielsPage .List_Included .container .card-header button {
@@ -2168,6 +2182,444 @@ footer p {
   margin: 10px 0px;
 }
 
+.CartPage .Deatiles h4 {
+  margin-top: 100px;
+}
+
+.CartPage tbody td {
+  vertical-align: middle;
+  padding: 20px 10px !important;
+}
+
+
+
+.CartPage table th {
+  background: rgba(244, 243, 243, 1);
+  padding: 15px 10px;
+}
+
+.CartPage tbody td ul {
+  display: flex;
+}
+
+.CartPage tbody td ul {
+  display: flex;
+  background: rgba(244, 243, 243, 1);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  justify-content: space-between;
+}
+
+.CartPage tbody td ul .plus,
+.CartPage tbody td ul .minus {
+  cursor: pointer;
+}
+
+.CartPage .Deatiles .PatientInfo .btn-delete {
+  width: max-content;
+  background: white;
+  border: 1px solid rgba(77, 77, 77, 1);
+  color: rgba(77, 77, 77, 1);
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.CartPage .Deatiles .PatientInfo .btn-apply {
+  background: transparent;
+  border: 1px solid rgba(201, 0, 32, 1);
+  color: rgba(201, 0, 32, 1);
+  margin: 25px 0px 0px;
+}
+
+.CartPage .Deatiles .PatientInfo .card-coupon {
+  padding: 20px;
+}
+
+.CartPage .Deatiles .PatientInfo .btn-apply:hover {
+  background: rgba(201, 0, 32, 1);
+  color: white;
+}
+
+.CartPage .card-coupon h5 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.CartPage .card-coupon input {
+  height: 50px;
+}
+
+.CartPage .Deatiles .PatientInfo .card {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding-bottom: 25px;
+}
+
+.CartPage .Deatiles .PatientInfo .card .row>div .content {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+
+}
+
+.CartPage .Deatiles .PatientInfo .card .hedaer-card h5 {
+  border-bottom: 1px solid rgba(224, 225, 237, 1);
+  color: black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.CartPage .contnet-table {
+  overflow-x: auto;
+}
+
+/*********modal*****************/
+.modal .modal-dialog {
+  margin-top: 10%;
+}
+
+.modal .modal-dialog {
+  margin-top: 10%;
+}
+
+.modal .modal-dialog h5 {
+  margin-top: 10%;
+  padding-top: 20px;
+}
+
+.modal .modal-header {
+  position: relative;
+  text-align: center;
+  border-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.modal .modal-header .btn-close {
+  margin: 0px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 100%;
+  font-size: 10px;
+  position: absolute;
+}
+
+.modal .modal-header .modal-title {
+  width: 100%;
+  margin-left: 30px;
+  padding-top: 20px;
+  font-size: 27px;
+}
+
+.modal .Reservation {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0px 0px 20px;
+}
+
+.modal .Reservation li {
+  border: 1px solid rgba(201, 0, 32, 1);
+  border-radius: 10px;
+  /* padding: 15px 10px; */
+  width: 28%;
+  margin-right: 10px;
+}
+
+.modal .Reservation li label {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  padding: 15px 10px;
+}
+
+.modal .Reservation li label img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.modal .Reservation li {
+  accent-color: rgba(201, 0, 32, 1);
+}
+
+.modal .Reservation li input {
+  width: 15px;
+  height: 15px;
+
+  margin-right: 10px;
+}
+
+.modal .btn-main {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.modal .active-img {
+  display: none;
+}
+
+.modal .active img {
+  display: none;
+}
+
+.modal .active .active-img {
+  display: block;
+}
+
+/***************Profile*****************/
+
+.Profile-page header {
+  height: 276px;
+}
+
+.Profile-page header .content .row h1 {
+  padding-top: 40px
+}
+
+.Profile-page .content-profile {
+  margin-top: -100px;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+  padding-bottom: 150px;
+}
+
+.Profile-page .content-profile .card.card-left {
+  background-color: white;
+  margin: 0px 10px;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  padding:
+    0px 0px 20px 0px;
+}
+
+.Profile-page .content-profile .card.card-left .info-profile {
+  text-align: center;
+  width: 68px;
+  height: 68px;
+  margin: 20px auto 0px;
+  position: relative;
+}
+
+.Profile-page .content-profile .card.card-left .info-profile img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.Profile-page .content-profile .card.card-left .info-profile input {
+  position: absolute;
+  opacity: 0;
+  width: 100px;
+  z-index: 1000;
+  bottom: -5px;
+  right: -61%;
+}
+
+.Profile-page .content-profile .card.card-left p {
+  margin-bottom: 0px;
+}
+
+.Profile-page .content-profile .card.card-left .info-profile .icon-change-img {
+  position: absolute;
+  width: 100px;
+  color: red;
+  z-index: 9;
+  bottom: -5px;
+  right: -61%;
+}
+
+.Profile-page .content-profile .card.card-left .Gift {
+  position: relative;
+  padding: 30px;
+  color: white;
+  margin: auto;
+}
+
+.Profile-page .content-profile .card.card-left .Gift .Gift-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.Profile-page .content-profile .card.card-left .Gift .Gift-img {
+  width: 72.75px;
+  height: 68.31px;
+
+}
+
+.Profile-page .content-profile .card.card-left .Gift p {
+  color: white;
+  margin: 5px 0px;
+}
+
+.Profile-page .content-profile .card.card-left .Gift p {
+  color: white;
+  margin: 0px;
+}
+
+.Profile-page .content-profile .card.card-left .Gift a {
+  color: white;
+}
+
+.Profile-page .content-profile .card.card-left .Gift h3 {
+  background: red;
+  color: white;
+  padding: 5px;
+  width: 99px;
+  margin: 0px auto;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  font-size: 20px;
+}
+
+.Profile-page .content-profile .card.card-left .logout {
+  color: rgba(223, 0, 36, 1);
+  font-weight: 500;
+}
+
+.Profile-page .content-profile .card.card-left .Gift {
+  background: url(../assets/background-gift.png) no-repeat center center;
+  background-size: contain;
+}
+
+.Profile-page .content-profile .card.card-left hr {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.Profile-page .content-profile .List-profile-tab {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid rgba(224, 225, 237, 1)
+}
+
+.Profile-page .content-profile .List-profile-tab li {
+  background: white;
+  padding: 20px;
+  width: 20%;
+}
+
+.Profile-page .content-profile .List-profile-tab li .active-img {
+  display: none;
+}
+
+.Profile-page .content-profile .List-profile-tab li:hover,
+.Profile-page .content-profile .List-profile-tab li.active {
+  background: linear-gradient(0deg, #F4F3F3, #F4F3F3),
+    linear-gradient(0deg, #DF0024, #DF0024);
+  border-bottom: 5px solid #DF0024;
+}
+
+.Profile-page .content-profile .List-profile-tab li:hover img,
+.Profile-page .content-profile .List-profile-tab li.active img {
+  display: none;
+}
+
+.Profile-page .content-profile .List-profile-tab li a {
+  color:
+    rgba(77, 77, 77, 1);
+  width: 100%;
+  display: block;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer !important;
+}
+
+.Profile-page .content-profile .List-profile-tab li:hover .active-img,
+.Profile-page .content-profile .List-profile-tab li.active .active-img {
+  display: block;
+}
+
+.Profile-page .content-profile .form-group {
+  text-align: left;
+}
+
+.Profile-page .content-profile .form-group {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Profile-page .content-profile .form-group input,
+.Profile-page .content-profile .form-group select {
+  background: rgba(242, 243, 244, 1);
+  height: 55px;
+}
+
+.Profile-page .content-profile .btn-main {
+  width: 90px;
+  margin-top: 20px;
+}
+
+/***************loading*****************/
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 20px 0px 50px;
+}
+
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: rgba(201, 0, 32, 1);
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
 /*********media*****************/
 @media screen and (max-width: 992px) {
   /******general*********/
@@ -2178,6 +2630,10 @@ footer p {
 
   p {
     font-size: 14px !important;
+  }
+
+  h4 {
+    font-size: 17px !important;
   }
 
   /*navbar */
@@ -2461,5 +2917,35 @@ footer p {
 
   .ContactUs .form-contact-us .card {
     width: 100%;
+  }
+
+  .CartPage .Deatiles .PatientInfo .card {
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+
+  .modal .Reservation {
+    flex-direction: column;
+  }
+
+  .modal .Reservation li {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .Profile-page .content-profile .List-profile-tab {
+    flex-direction: column;
+  }
+
+  .Profile-page .content-profile .List-profile-tab li {
+    width: 100%;
+    text-align: center;
   }
 }

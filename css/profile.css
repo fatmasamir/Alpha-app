@@ -1,0 +1,239 @@
+.profile-SideBar{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+padding-block: 40px;
+    gap: 5px;
+    
+}
+.profile-SideBar h3{
+    color: var(--Foundation-Blue-Normal, #2B2E38);
+ 
+    
+    /* Body 3 */
+  border-bottom: 1px solid #E0E1ED;
+  padding-inline: 20px ;
+  padding-bottom: 35px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+}
+.profile-SideBar .profilePic img
+{
+width: 68px;
+height: 68px;
+border-radius: 50%;
+}
+.profile-SideBar .profilePic{
+    width: 68px;
+height: 68px;
+border-radius: 50%;
+position: relative;
+}
+.profile-SideBar .profilePic .editIcon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    background-color: white;
+    cursor: pointer;
+position: absolute;
+bottom: -8px;
+right: -10px;
+    justify-content: center;
+    align-items: center;
+}
+.profile-SideBar .profilePic .editIcon img{
+    height: 20px;
+    width: 35px;
+    
+}
+.profile-SideBar .giftContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../assets/giftPointsBg.png");
+    background-size: cover;
+    padding:20px 42px ;
+    border-radius: 10px;
+    color: white;
+    gap: 15px;
+    margin-block: 32px;
+ 
+}
+.profile-SideBar .logout-btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid #E0E1ED;
+    padding-inline: 47px ;
+    color: #DF0024;
+  font-size: 18px;
+    padding-top: 35px;
+}
+.ProfieContainer .ProfileNavbar ul {
+display: flex;
+justify-content: space-between;
+}
+.ProfieContainer .ProfileNavbar ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+padding: 16px 00;
+width: 100%;
+font-size: 18px;
+
+color:#4D4D4D ;
+    cursor: pointer;
+}
+.ProfieContainer .ProfileNavbar ul li{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    border-bottom:  1px solid #afaeae;
+
+}
+.ProfieContainer .ProfileNavbar ul li.active{
+background-color: #afaeae;
+color: black;
+border-bottom: 3px solid #DF0024;
+}
+.ProfieContainer .ProfileNavbar ul li.active a{
+    background-color: #afaeae;
+    color: black;
+    }
+.ProfieContainer{
+    background-color: white;
+}
+.ProfieContainer input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 18px;
+    border: 1px solid var(--foundation-blue-light-active, #D6D6D6);
+}
+.ProfieContainer .myAccount h3{
+    color: var(--foundation-blue-dark-active, #2D2D2D);
+font-family: Cairo;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 25.2px */
+text-transform: capitalize;
+margin-top: 24px;
+}
+.ProfieContainer .myAccount .submitBtn
+{
+    padding: 10px 24px;
+    background-color: #DF0024;
+    color: white;
+    border-radius: 12px 0px;
+    border: none;
+    margin-top: 30px;
+}
+.modal-body input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 18px;
+    border: 1px solid var(--foundation-blue-light-active, #D6D6D6);
+    background-color: #F2F3F4;
+}
+.modal-body h3{
+    color: var(--foundation-blue-dark-active, #2D2D2D);
+    font-family: Cairo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 25.2px */
+    text-transform: capitalize;
+    margin-top: 24px;
+}
+.modal-body  .submitBtn
+{
+    padding: 10px 24px;
+    background-color: #DF0024;
+    color: white;
+    border-radius: 12px 0px;
+    border: none;
+ 
+    margin-top: 30px;
+
+}
+.SingleAddress{
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    align-items: center;
+border: 1px solid var(--foundation-blue-light-hover, #E0E1ED);
+display: flex;
+justify-content: space-between;
+}
+.SingleAddress .editBtn{
+background-color: #F2F3F4;
+border-radius: 6px;
+padding: 8px 16px;
+color: black;
+}
+.SingleAddress .deleteBtn{
+    color: black;
+    border: 1px solid var(--foundation-blue-light-hover, #E0E1ED);
+border-radius: 6px;
+padding: 8px 16px;
+}
+*{
+    box-sizing: border-box;
+}
+.pendingBadge{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+background: var(--Foundation-Blue-Light, #F2F3F4);
+}
+.ConfirmedBadge{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+background: var(--Foundation-Blue-Light, #DEFFE5);
+}
+.BookingDelete{
+    transition: 0.4s;
+    border-radius: 12px 0px; color: #C90020; border: 1px solid #C90020; padding: 12px 24px; background-color: transparent;
+}
+.BookingDelete:hover{
+    background-color: #DF0024;
+    color: white !important;
+}
+.modalHeader{
+    width: 100%;
+border-radius: 10px;
+background: var(--Foundation-Blue-Light, #F2F3F4);
+padding: 10px;}
+.modalDataBody{
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box !important;
+    width: 100%;
+    margin-top: 20px;
+  border: 1px solid var(--foundation-blue-light-hover, #E0E1ED);
+}
+.modalDataBody h3{
+    color: var(--4-d-4-d-4-d, #4D4D4D);
+    font-family: Cairo;
+    font-size: 20px;
+    font-style: normal;
+    margin: 0px;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+}
+.modalDataBody span{
+    color: var(--foundation-blue-dark-active, #2D2D2D);
+font-family: Cairo;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 25.2px */
+}

@@ -237,3 +237,24 @@ font-style: normal;
 font-weight: 600;
 line-height: 140%; /* 25.2px */
 }
+.ProfieContainer{
+    padding: 20px;
+}
+.profile-SideBar .ProfileNavbar ul li{
+margin-bottom: 20px;
+display: block;
+padding: 10px 18px;
+border-radius: 20px;
+color: #afaeae;
+}
+.profile-SideBar .ProfileNavbar ul li a{
+    color: #afaeae;
+
+}
+.profile-SideBar .ProfileNavbar ul li.active{
+  background-color: #afaeae;
+  
+}
+.profile-SideBar .ProfileNavbar ul li.active a{
+ color: black;
+}
